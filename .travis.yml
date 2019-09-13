@@ -1,0 +1,12 @@
+language: generic 
+
+#because of docker
+sudo: required
+services: 
+  -  docker
+
+before_install:
+  - docker build -t cahitbeyaz/react-docker -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true cahitbeyaz/react-docker npm run test -- --coverage
