@@ -10,6 +10,7 @@ RUN npm run build
 
 #previous step will stop here
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 #no need for starting nginx it start when container is built
 
