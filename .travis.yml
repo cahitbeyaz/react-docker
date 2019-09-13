@@ -21,6 +21,6 @@ deploy:
   on:
     branch: master
   access_key_id: 
-    secure: $aws-access-key-id
+    secure: AKIAV5NHAVHZ77MMJHAQ
   secret_access_key:
-    secure: $aws-access-key
+    secure: +08Jm/HtNo0DNZ9isMglQqnAzmsOjigSxIcjFUxh
